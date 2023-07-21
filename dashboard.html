@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="">
+        <h1 class="text-center p-6 bg-indigo-600 my-6 font-bold text-2xl">Bank Of Dreams</h1>
+        <section class="grid grid-cols-3">
+            <div class="bg-emerald-400 p-3 mx-3 rounded flex justify-between">
+                <h4 class="font-bold text-xl">Deposit</h4>
+                <h2 class="font-bold text-2xl">$<span id="deposit-amount">50</span></h2>
+            </div>
+            <div class="bg-red-300 p-3 mx-3 rounded flex justify-between">
+                <h4 class="font-bold text-xl">WithDrow</h4>
+                <h2 class="font-bold text-2xl">$<span id="withdraw-amount" >50</span></h2>
+            </div>
+            <div class="bg-teal-400 p-3 mx-3 rounded flex justify-between">
+                <h4 class="font-bold text-xl">Balance</h4>
+                <h2 class="font-bold text-2xl">$<span id="balance-amount" >50</span></h2>
+            </div>
+        </section>
+        <div class="grid grid-cols-2">
+            <div class="bg-orange-700 p-6 text-center rounded mx-3 my-4">
+                <input id="deposit-field" class="block w-full rounded p-2" type="number" placeholder="Enter Your Deposit Amount" >
+                <button id="deposit-btn1" class=" bg-green-500 p-2 my-3 rounded w-full font-bold text-2xl">Deposit</button>
+            </div>
+            <div class="bg-orange-700 p-6 text-center rounded mx-3 my-4">
+                <input id="withdraw-field" class="block w-full rounded p-2" type="number"  placeholder="Enter Your WithDrow Amount" >
+                <button id="withdraw-btn2" class="bg-green-500 p-2 my-3 rounded w-full font-bold text-2xl">WithDrow</button>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
